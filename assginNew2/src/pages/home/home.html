@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label color="primary" floating>Enter Text</ion-label>
+    <ion-input type="text" value=""  [(ngModel)]="inputedtext"></ion-input>
+  </ion-item>
+
+  <ion-item style="text-align:center">
+      <button ion-button (click)="getDataFromServeForpalindrome()">Check If its Palindrome</button>
+  </ion-item>
+
+  <div class="results" *ngIf="palindromeOrNot">
+    This is a palindrome
+  </div>
+  <div class="results" *ngIf="palindromeOrNot === false">
+    This is not palindrome
+  </div>
+
+</ion-content>
