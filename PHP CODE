@@ -1,0 +1,14 @@
+<?php 
+
+// the string send by user for checking
+$originalString = $_POST['getString'];
+// Original String reverse 
+$reverseString =  strrev($originalString);
+// Comparing the orginial with reverse to check if plaindrome
+if($originalString == $reverseString){
+    print "<br>Plaindrome";
+} else {
+    print "<br>Not Plaindrome";
+}
+
+?>
